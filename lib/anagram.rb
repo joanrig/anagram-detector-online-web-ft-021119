@@ -8,7 +8,7 @@ end
 def match(possible_anagrams)
   match = []
   possible_anagrams.each do |poss|
-    if poss.char.sort.join == @word.char.sort.join
+    if poss.chars.sort.join == @word.char.sort.join
       match << poss
     end
   end
