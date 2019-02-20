@@ -11,5 +11,6 @@ def match(possible_anagrams)
     if poss.char.sort.join == @word.char.sort.join
       match << poss
     end
+  end
   match
 end
